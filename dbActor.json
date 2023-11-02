@@ -1,0 +1,92 @@
+[
+  {
+    "id": 1,
+    "img": "https://imgix.ranker.com/node_img/24/472711/original/anthony-hopkins-writers-photo-3?auto=format&q=60&fit=crop&fm=pjpg&dpr=2&crop=faces&h=150&w=150",
+    "name": "Anthony Hopkins",
+    "age": 85,
+    "address": "Margam, Port Talbot, Wales, UK",
+    "info": "British actor Anthony Hopkins mesmerizes audiences with his commanding voice and intense acting style. Known for his chilling portrayal of Hannibal Lecter in The Silence of the Lambs, Hopkins has also excelled in period dramas such as Howard's End and The Remains of the Day. His prolific acting career demonstrates his versatility and adaptability to various genres.",
+    "createdAt": "2023-06-17T22:22:29.497Z",
+    "clip": "https://www.youtube.com/embed/OlhLOWTnVoQ?si=f4ojpMKk9TOqT930"
+  },
+  {
+    "id": 2,
+    "img": "https://imgix.ranker.com/user_node_img/72/1433037/original/1433037-photo-u1696572410?auto=format&q=60&fit=crop&fm=pjpg&dpr=2&crop=faces&h=150&w=150",
+    "name": "Leonardo DiCaprio",
+    "age": 48,
+    "address": "Los Angeles, California",
+    "info": "A powerhouse of talent, Leonardo DiCaprio has captivated audiences with his incredible performances in a wide range of films. From playing the charming Jack Dawson in Titanic to portraying the enigmatic Jay Gatsby in The Great Gatsby, DiCaprio's versatility and dedication to his craft are evident. With an Academy Award win for his role in The Revenant, his skill as an actor remains unparalleled.",
+    "createdAt": "2023-06-17T22:22:29.497Z",
+    "clip": "https://www.youtube.com/embed/5PSNL1qE6VY?si=x61-a9FW4Phf9rv0"
+  },
+  {
+    "id": 3,
+    "img": "https://imgix.ranker.com/user_node_img/43/843540/original/denzel-washington-film-directors-photo-u2?auto=format&q=60&fit=crop&fm=pjpg&dpr=2&crop=faces&h=150&w=150",
+    "name": "Denzel Washington",
+    "age": 68,
+    "address": "Mount Vernon, New York, USA",
+    "info": "Denzel Washington is a Hollywood legend with a magnetic screen presence that exudes charisma and authority. From his groundbreaking role in Malcolm X to his gritty portrayal of a crooked cop in Training Day, Washington has consistently delivered powerful performances throughout his career. A two-time Academy Award winner, he continues to be a sought-after leading man in the film industry.",
+    "createdAt": "2023-06-17T22:22:29.497Z",
+    "clip": "https://www.youtube.com/embed/_rRoD28-WgU?si=vPLvKSRkMKPiZFJn"
+  },
+  {
+    "id": 4,
+    "img": "https://imgix.ranker.com/user_node_img/97/1924427/original/robin-williams-photo-u103?auto=format&q=60&fit=crop&fm=pjpg&dpr=2&crop=faces&h=150&w=150",
+    "name": "Robin Williams",
+    "age": 63,
+    "address": "Chicago, Illinois, USA",
+    "info": "One of the most beloved comedians of all time, Robin Williams had a rare ability to light up any room with his wit and warmth. His unforgettable performances in classics like Good Will Hunting, Dead Poets Society, and Mrs. Doubtfire showcased his incredible range and depth as an actor. Tragically, his untimely passing in 2014 left a void in the hearts of fans worldwide.",
+    "createdAt": "2023-06-17T22:22:29.497Z",
+    "clip": "https://www.youtube.com/embed/KxJHxL7pi54?si=TEbncnKwELVTPUOq"
+  },
+  {
+    "id": 5,
+    "img": "https://imgix.ranker.com/user_node_img/23/444597/original/al-pacino-theater-actors-photo-u32?auto=format&q=60&fit=crop&fm=pjpg&dpr=2&crop=faces&h=150&w=150",
+    "name": "Al Pacino",
+    "age": 83,
+    "address": "East Harlem, New York, USA",
+    "info": "With his intense gaze and captivating screen presence, Al Pacino is undoubtedly one of the greatest actors of all time. Known for his unforgettable roles in The Godfather trilogy, Scarface, and Serpico, Pacino consistently delivers powerful performances that leave lasting impressions. His incredible body of work has earned him numerous accolades, including an Academy Award for his role in Scent of a Woman.",
+    "createdAt": "2023-06-17T22:22:29.497Z",
+    "clip": "https://www.youtube.com/embed/cjXOUZtKV28?si=rAbj2TPY8IpGfAvL"
+  },
+  {
+    "id": 6,
+    "img": "https://imgix.ranker.com/user_node_img/96/1918857/original/robert-de-niro-recording-artists-and-groups-photo-u5?auto=format&q=60&fit=crop&fm=pjpg&dpr=2&crop=faces&h=150&w=150",
+    "name": "Robert De Niro",
+    "age": 80,
+    "address": "New York City, USA, New York, Greenwich Village",
+    "info": "An actor of remarkable depth and skill, Robert De Niro has been captivating audiences for over five decades with iconic performances in films like Taxi Driver, Raging Bull, and Goodfellas. His collaboration with legendary director Martin Scorsese has produced some of cinema's most memorable moments. With two Academy Awards under his belt, De Niro remains one of Hollywood's most revered talents.",
+    "createdAt": "2023-06-17T22:22:29.497Z",
+    "clip": "https://www.youtube.com/embed/3cxixdGhUYw?si=d5kHC6-AvfcG3Hsg"
+  },
+  {
+    "id": 7,
+    "img": "https://imgix.ranker.com/user_node_img/41/809711/original/u1?auto=format&q=60&fit=crop&fm=pjpg&dpr=2&crop=faces&h=150&w=150",
+    "name": "Daniel Day-Lewis",
+    "age": 66,
+    "address": "London, England",
+    "info": "Widely hailed as one of the greatest actors of his generation, Daniel Day-Lewis is renowned for his immersive method acting and complete transformation into his roles. From his emotionally charged performance in My Left Foot to his iconic portrayal of Abraham Lincoln in Lincoln, Day-Lewis's commitment to his craft is unmatched. A three-time Academy Award winner, Day-Lewis announced his retirement from acting in 2017.",
+    "createdAt": "2023-06-17T22:22:29.497Z",
+    "clip": "https://www.youtube.com/embed/sG3YXUBoroM?si=7eqqiSOazUYUBGxW"
+  },
+  {
+    "id": 8,
+    "img": "https://imgix.ranker.com/user_node_img/81/1615040/original/morgan-freeman-theater-actors-photo-u1?auto=format&q=60&fit=crop&fm=pjpg&dpr=2&crop=faces&h=150&w=150",
+    "name": "Morgan Freeman",
+    "age": 86,
+    "address": "Memphis, Tennessee, USA",
+    "info": "The soothing voice and calm demeanor of Morgan Freeman have made him a beloved figure in the world of cinema. From his heartfelt portrayal of a former inmate in The Shawshank Redemption to his wise presence as God in Bruce Almighty, Freeman brings grace and elegance to every role. His long and illustrious career has earned him both critical acclaim and audience adoration.",
+    "createdAt": "2023-06-17T22:22:29.497Z",
+    "clip": "https://www.youtube.com/embed/T-WhiMGfHIs?si=JFZMhGiMsrPXwQSo"
+  },
+  {
+    "id": 9,
+    "img": "https://imgix.ranker.com/user_node_img/53/1046377/original/gary-oldman-photo-u35?auto=format&q=60&fit=crop&fm=pjpg&dpr=2&crop=faces&h=150&w=150",
+    "name": "Gary Oldman",
+    "age": 65,
+    "address": "New Cross, London, England",
+    "info": "A chameleon-like actor, Gary Oldman has an uncanny ability to disappear into his roles, showcasing incredible versatility throughout his career. His captivating performances in films such as Sid and Nancy, Bram Stoker's Dracula, and The Dark Knight have left indelible marks on the cinematic landscape. Oldman's transformative skills were recognized with an Academy Award win for his portrayal of Winston Churchill in Darkest Hour.",
+    "createdAt": "2023-06-17T22:22:29.497Z",
+    "clip": "https://www.youtube.com/embed/Oz7xMY1AbbI?si=ZfdKJMH58hWARdEU"
+  }
+]
