@@ -13,6 +13,7 @@ import Alert from "@mui/material/Alert";
 import AlertTitle from "@mui/material/AlertTitle";
 import DialogActions from "@mui/material/DialogActions";
 import { Link } from "react-router-dom";
+import axios from "axios";
 
 export default function Add() {
   const [open, setOpen] = useState(false);
@@ -33,18 +34,32 @@ export default function Add() {
       clip: "",
     },
 
-    onSubmit: (values) => {
+    // onSubmit: (values) => {
+    //   values.createdAt = new Date(values.createdAt);
+    //   fetch(postActorUrl, {
+    //     method: "POST",
+    //     headers: {
+    //       "Content-Type": "application/json",
+    //     },
+    //     body: JSON.stringify(values),
+    //   })
+    //     .then((response) => response.json())
+    //     .then((data) => setOpen(true))
+    //     .catch((error) => console.log(error.message));
+    // },
+
+    onSubmit: async (values) => {
       values.createdAt = new Date(values.createdAt);
-      fetch(postActorUrl, {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify(values),
-      })
-        .then((response) => response.json())
-        .then((data) => setOpen(true))
-        .catch((error) => console.log(error.message));
+      try {
+        await axios.post(postActorUrl, values, {
+          headers: {
+            "Content-Type": "application/json",
+          },
+        });
+        setOpen(true);
+      } catch (error) {
+        console.log(error.message);
+      }
     },
 
     validationSchema: Yup.object({

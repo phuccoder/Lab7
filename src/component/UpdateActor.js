@@ -15,6 +15,7 @@ import DialogActions from "@mui/material/DialogActions";
 import { Link } from "react-router-dom";
 import { useEffect } from "react";
 import { useParams } from "react-router-dom";
+import axios from "axios";
 
 export default function Update() {
   const actor = useParams();
@@ -43,18 +44,31 @@ export default function Update() {
 
     // values : {APIData},
 
-    onSubmit: (values) => {
+    // onSubmit: (values) => {
+    //   values.createdAt = new Date(values.createdAt);
+    //   fetch(`${putActorUrl}/${actor.id}`, {
+    //     method: "PUT",
+    //     headers: {
+    //       "Content-Type": "application/json",
+    //     },
+    //     body: JSON.stringify(values),
+    //   })
+    //     .then((response) => response.json())
+    //     .then((data) => setOpen(true))
+    //     .catch((error) => console.log(error.message));
+    // },
+    onSubmit: async (values) => {
       values.createdAt = new Date(values.createdAt);
-      fetch(`${putActorUrl}/${actor.id}`, {
-        method: "PUT",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify(values),
-      })
-        .then((response) => response.json())
-        .then((data) => setOpen(true))
-        .catch((error) => console.log(error.message));
+      try {
+        await axios.put(`${putActorUrl}/${actor.id}`, values, {
+          headers: {
+            "Content-Type": "application/json",
+          },
+        });
+        setOpen(true);
+      } catch (error) {
+        console.log(error.message);
+      }
     },
 
     validationSchema: Yup.object({

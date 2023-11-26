@@ -9,6 +9,12 @@
   }
 }
 
+@media screen and (max-width: 768px) {
+  .App-logo {
+    height: 20vmin;
+  }
+  
+}
 html {
   position: relative;
   min-height: 100%;

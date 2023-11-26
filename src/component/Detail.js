@@ -6,6 +6,7 @@ import { Card, Grid } from "@mui/material";
 import { CardMedia } from "@mui/material";
 import { Typography } from "@mui/material";
 import { Box, Paper } from "@mui/material";
+import axios from "axios";
 
 export default function Detail() {
   const actor = useParams();
@@ -13,18 +14,31 @@ export default function Detail() {
   const [APIData, setAPIData] = useState([]);
   const getStaffsUrl = `https://65360a16c620ba9358ece78a.mockapi.io/Lab7/${actor.id}`;
 
+  // useEffect(() => {
+  //   fetch(getStaffsUrl, { method: "GET" })
+  //     .then((response) => {
+  //       if (!response.ok) {
+  //         throw new Error(`HTTP status: ${response.status}`);
+  //       }
+  //       return response.json();
+  //     })
+  //     .then((data) => {
+  //       setAPIData(data);
+  //     })
+  //     .catch((error) => console.log(error.message));
+  // }, [getStaffsUrl]);
+
   useEffect(() => {
-    fetch(getStaffsUrl, { method: "GET" })
-      .then((response) => {
-        if (!response.ok) {
-          throw new Error(`HTTP status: ${response.status}`);
-        }
-        return response.json();
-      })
-      .then((data) => {
-        setAPIData(data);
-      })
-      .catch((error) => console.log(error.message));
+    const fetchData = async () => {
+      try {
+        const response = await axios.get(getStaffsUrl);
+        setAPIData(response.data);
+      } catch (error) {
+        console.log(error.message);
+      }
+    };
+
+    fetchData();
   }, [getStaffsUrl]);
 
   return (

@@ -22,6 +22,7 @@ import AlertTitle from "@mui/material/AlertTitle";
 import DialogActions from "@mui/material/DialogActions";
 import { Link } from "react-router-dom";
 import Button from "@mui/material/Button";
+import axios from "axios";
 
 export default function Dashboard() {
   const [APIData, setAPIData] = useState([]);
@@ -44,14 +45,23 @@ export default function Dashboard() {
     loadactors();
   };
 
-  const deleteActor = () => {
+  // const deleteActor = () => {
+  //   setOpen(false);
+  //   fetch(deleteActorsUrl + `/${idDelete}`, {
+  //     method: "DELETE",
+  //   })
+  //     .then((response) => response.json())
+  //     .then((data) => setOpenDelSucDia(true))
+  //     .catch((error) => console.log(error.message));
+  // };
+  const deleteActor = async () => {
     setOpen(false);
-    fetch(deleteActorsUrl + `/${idDelete}`, {
-      method: "DELETE",
-    })
-      .then((response) => response.json())
-      .then((data) => setOpenDelSucDia(true))
-      .catch((error) => console.log(error.message));
+    try {
+      await axios.delete(deleteActorsUrl + `/${idDelete}`);
+      setOpenDelSucDia(true);
+    } catch (error) {
+      console.log(error.message);
+    }
   };
 
   const showConfirmDeleteDialog = (id) => {
